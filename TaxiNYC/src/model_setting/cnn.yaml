@@ -1,0 +1,27 @@
+---
+seed: 1024
+
+dataset:
+  flow: dataloader_flow
+
+model:
+  name: cnn
+  type: cnn
+
+  filters: [128,128,64,64]
+  hiddens: [64]
+  embed_dim: 0
+  
+training:
+  iterations_per_epoch: 1000
+  flow_batch_size: 16
+  
+  wd: 0
+  lr: 0.01
+  lr_decay_step: 20000
+  lr_decay_factor: 0.1
+  lr_min: 0.000002
+  clip_gradient: 5
+
+  early_stop_metric: flow_mae
+  early_stop_epoch: 100

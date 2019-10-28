@@ -40,7 +40,7 @@ Unzip the data files in:
 
 ### Description of Flow Data
 
-The flow data are collected from 32x32 grids of Beijing and New York city. The shape of data are `(date, hour, row, colume, flow_type)`. 
+The flow data are collected from Beijing and New York city. The shape of data are `(date, hour, row, colume, flow_type)`. 
 
 ---
 
