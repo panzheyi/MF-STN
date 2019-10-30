@@ -24,4 +24,4 @@ training:
   clip_gradient: 5
 
   early_stop_metric: flow_mae
-  early_stop_epoch: 100
+  early_stop_epoch: 50

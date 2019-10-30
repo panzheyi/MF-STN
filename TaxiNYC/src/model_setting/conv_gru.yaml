@@ -5,7 +5,7 @@ dataset:
   flow: dataloader_flow
 
 model:
-  name: std_conv_gru_v1
+  name: conv_gru
   type: conv_gru
 
   filters: [64,64]
@@ -24,4 +24,4 @@ training:
   clip_gradient: 5
 
   early_stop_metric: flow_mae
-  early_stop_epoch: 100
+  early_stop_epoch: 50
